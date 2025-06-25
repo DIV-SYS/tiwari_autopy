@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Extracted Info</title></head>
+<body>
+    <h2>Extracted Contact Info</h2>
+    {% for result in results %}
+        <div>
+            <p><strong>Company:</strong> {{ result.company }}</p>
+            <ul>
+                {% for name, email in result.contacts %}
+                    <li>{{ name }} — {{ email }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+    <hr>
+    <p><strong>Excel File:</strong> <a href="{{ drive_link }}" target="_blank">Download from Google Drive</a></p>
+    <a href="/">&larr; Back</a>
+</body>
+</html>

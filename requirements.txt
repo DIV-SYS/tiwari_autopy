@@ -1,0 +1,11 @@
+Flask
+requests
+pytesseract
+pdf2image
+pandas
+gspread
+oauth2client
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
